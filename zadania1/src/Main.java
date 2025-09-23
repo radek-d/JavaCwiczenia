@@ -45,6 +45,22 @@ public class Main {
             }
         }
 
-        scanner.close();
+        //zad3
+        System.out.println("Zadanie 3");
+        Scanner zad2 = new Scanner(System.in);
+        double wzrost, waga, BMI;
+        System.out.println("Podaj wagę: ");
+        waga = scannerliczb.nextDouble();
+        System.out.println("Podaj wzrost: ");
+        wzrost = scannerliczb.nextDouble();
+
+        BMI = waga/(wzrost*wzrost);
+        if(BMI<18.5){
+            System.out.println("Niedowaga");
+        }else if(BMI>24.9){
+            System.out.println("Niedowaga");
+        }else{
+            System.out.println("Waga prawidłowa");
+        }
     }
 }
