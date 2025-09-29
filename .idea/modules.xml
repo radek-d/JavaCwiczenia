@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/JavaCwiczenia.iml" filepath="$PROJECT_DIR$/.idea/JavaCwiczenia.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PodstawyJavy/PodstawyJavy.iml" filepath="$PROJECT_DIR$/PodstawyJavy/PodstawyJavy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/haras/haras.iml" filepath="$PROJECT_DIR$/haras/haras.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zadania1/zadania1.iml" filepath="$PROJECT_DIR$/zadania1/zadania1.iml" />
+    </modules>
+  </component>
+</project>

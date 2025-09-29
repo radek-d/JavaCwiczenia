@@ -62,5 +62,100 @@ public class Main {
         }else{
             System.out.println("Waga prawidłowa");
         }
+        //zad4
+        System.out.println("Zadanie 4");
+        double dochod, podatek;
+        Scanner scannerPodatek = new Scanner(System.in);
+
+        System.out.println("Podaj swój dochód: ");
+        dochod = scannerPodatek.nextDouble();
+
+        if (dochod <= 85528) {
+            podatek = 0.18 * dochod - 556.02;
+            if(podatek < 0) podatek = 0;
+        } else {
+            podatek = 14839.02 + 0.32 * (dochod - 85528);
+        }
+
+        System.out.println("Należny podatek to: " + podatek + " zł");
+        //zad5
+        System.out.println("Zadanie 5");
+        double cena, rata, oprocentowanie, cenaZRatach;
+        int liczbaRat;
+
+        Scanner scannerRaty = new Scanner(System.in);
+
+    // Wczytaj poprawną cenę
+        do {
+            System.out.println("Podaj cenę towaru (od 100 zł do 10000 zł): ");
+            cena = scannerRaty.nextDouble();
+        } while (cena < 100 || cena > 10000);
+
+    // Wczytaj poprawną liczbę rat
+        do {
+            System.out.println("Podaj liczbę rat (od 6 do 48): ");
+            liczbaRat = scannerRaty.nextInt();
+        } while (liczbaRat < 6 || liczbaRat > 48);
+
+    // Ustal oprocentowanie
+        if (liczbaRat >= 6 && liczbaRat <= 12) {
+            oprocentowanie = 0.025;
+        } else if (liczbaRat <= 24) {
+            oprocentowanie = 0.05;
+        } else {
+            oprocentowanie = 0.10;
+        }
+
+    // Oblicz całkowity koszt + odsetki
+        cenaZRatach = cena + (cena * oprocentowanie);
+        rata = cenaZRatach / liczbaRat;
+
+        System.out.println("Miesięczna rata wynosi: " + rata + " zł");
+
+        //zad6
+        System.out.println("Zadanie 6");
+        double liczba1, liczba2, wynik;
+        char dzialanie;
+        Scanner scannerKalkulator = new Scanner(System.in);
+
+        System.out.println("Prosty kalkulator: +, -, *, /");
+        System.out.println("Podaj pierwszą liczbę: ");
+        liczba1 = scannerKalkulator.nextDouble();
+
+        System.out.println("Podaj symbol działania (+, -, *, /): ");
+        dzialanie = scannerKalkulator.next().charAt(0);
+
+        System.out.println("Podaj drugą liczbę: ");
+        liczba2 = scannerKalkulator.nextDouble();
+
+        switch (dzialanie) {
+            case '+':
+                wynik = liczba1 + liczba2;
+                System.out.println("Wynik: " + wynik);
+                break;
+            case '-':
+                wynik = liczba1 - liczba2;
+                System.out.println("Wynik: " + wynik);
+                break;
+            case '*':
+                wynik = liczba1 * liczba2;
+                System.out.println("Wynik: " + wynik);
+                break;
+            case '/':
+                if (liczba2 == 0) {
+                    System.out.println("Nie można dzielić przez zero.");
+                } else {
+                    wynik = liczba1 / liczba2;
+                    System.out.println("Wynik: " + wynik);
+                }
+                break;
+            default:
+                System.out.println("Nieprawidłowy symbol działania.");
+                break;
+        }
+
+        System.out.println("Koniec zadań");
+
+
     }
 }
