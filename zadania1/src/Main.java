@@ -154,7 +154,7 @@ public class Main {
                 break;
         }
 
-        System.out.println("Koniec zadań");
+        System.out.println("Koniec zadania");
 
 
     }
