@@ -170,9 +170,6 @@ public class Main {
         System.out.println("Dodawanie w kodzie ZM (wynik normalny): " + suma);
         System.out.println("Odejmowanie w kodzie ZM (wynik normalny): " + roznica);
 
-        System.out.println("Dodawanie i odejmowanie w ZU1 i ZU2 jest realizowane przez operacje na intach w Javie.");
-        System.out.println("Koniec programu.");
-
         scanner.close();
     }
 }
