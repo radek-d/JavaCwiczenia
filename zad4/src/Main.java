@@ -93,7 +93,7 @@ public class Main {
         String tekst6 = scanner.nextLine().toLowerCase();
         System.out.println("Podaj przesunięcie (może być ujemne): ");
         int przesuniecie = scanner.nextInt();
-        scanner.nextLine(); // czyszczenie bufora
+        scanner.nextLine();
 
         String zaszyfrowany = "";
 
@@ -107,7 +107,7 @@ public class Main {
             } else if (znak == ' ') {
                 zaszyfrowany += ' ';
             } else {
-                zaszyfrowany += znak; // pozostaw inne znaki bez zmian
+                zaszyfrowany += znak;
             }
         }
 
