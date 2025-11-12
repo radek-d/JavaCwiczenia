@@ -193,7 +193,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        System.out.println("Silnia(5) iter: " + silniaIter(5));
+        System.out.println("Silnia(5) iterr: " + silniaIter(5));
         System.out.println("Silnia(5) rek: " + silniaRek(5));
         System.out.println("Fib(5) iter: " + fibIter(5));
         System.out.println("Fib(5) rek: " + fibRek(5));
